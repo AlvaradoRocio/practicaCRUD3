@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* header */
+header{
+    background-color: rgb(199, 168, 122);
+    padding: 1em 0;
+    margin:0;
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Menu of header*/
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 19%;
+}
+
+nav ul li a{
+    color:black;
+    font-size: 23px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.1em 0;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+nav ul li a.activo{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 28px;
+}
+
+/*Inicio Main index */
+.fondo{
+    background: linear-gradient(to bottom, rgb(219, 194, 161), rgb(219, 202, 179));
+    padding-top:1em;
+}
+
+.holder{
+    
+    width: 960px;
+    margin:0 auto;
+}
+
+.modificado{
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.6);
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.homeimg{
+    margin-bottom: 1.5em; 
+}
+ 
+.homeimg img{
+    width:960px;
+    height:220px ;
+}
+
+.columns{
+    overflow:hidden;
+    padding: 2px;
+}
+
+.left{
+    float: left;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(150, 31, 31);
+    line-height: 25px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.right{
+    float:right;
+}
+
+.comentarios{
+    width:25%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.8em;
+    display: block;
+}
+
+.bienvenidos, .comentarios{
+    box-sizing: border-box;
+    padding:5px;
+}
+
+.separacion{
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border:  0.5px solid black;
+    margin:5px;
+    padding:5px;
+}
+/*fin de index*/
+
+/*inicio de novedades*/
+.novedad h1{
+    text-align: center;
+}
+
+.novedades{
+    z-index: 1;
+    border-bottom: 1px solid rgb(70, 69, 69);
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.novedades h3, .novedades h4, .novedades p{
+    padding-bottom: 15px;
+}
+
+
+/* Fin de novedades*/
+
+/* Inicio de nosotros*/
+.people{
+    overflow:hidden;
+    background-color: rgb(180, 152, 125);
+    padding:30px;
+}
+
+.person img{
+    width: 185px;
+    height: 200px;
+    border-radius: 50%;
+}
+.person{
+    width: 22%;
+    text-align: center;
+    float: left;
+    margin-left: 3%;
+    border: 1px solid black;
+    border-radius: 2%;
+    box-sizing: border-box;
+}
+
+.person:first-child{
+    margin-left: 0;
+}
+.person h3{
+    font-weight: bold;
+    padding-top: 25px;
+    border-bottom: 1px solid black;
+}
+
+.person p{
+    font-size: 0.9em;
+    padding: 15px;
+}
+/* Fin de nosotros*/
+
+/* Inicio Galeria*/
+.imagenes{
+    overflow: hidden;
+}
+
+.imagen img{
+    width:60%;
+    height: 150px;
+    border-radius: 25%;
+}
+
+.imagen{
+    width: 27%;
+    float: left;
+    margin: 1%;
+}
+
+.imagen img:hover{
+    width: 70%;
+    cursor: pointer;
+}
+/* Fin de galeria */
+
+/* Inicio contacto*/
+h1{
+    font-family: 'Indie Flower', cursive;
+    text-shadow: -8px 7px 3px rgba(0,0,0,0.6);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.columna{
+    border-radius: 20px;
+    box-shadow: -22px 19px 24px -1px rgba(0,0,0,0.75);;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6em;
+    margin-left: 150px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.formulario label{
+    vertical-align: top;
+    width:10%;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 90px;
+    margin-right: 20px;
+}
+
+.formulario input, .formulario textarea{
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.9em;
+    margin-top:8px;
+    font-size: 0.8em;
+    width: 50%;    
+}
+
+
+.formulario textarea{
+    resize:none;
+    height: 12em;
+}
+
+.acciones{
+    height: 45px;
+    padding-top: 25px;
+    padding-left: 150px;
+}
+
+.redes ul{
+    list-style: none;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+.redes ul li{
+    display: inline-block;
+    width: 15%;
+}
+
+.redes ul li a{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin:1em;
+}
+
+.redes ul li:first-child{
+    padding-right: 75px;
+}
+
+.icono{
+    font-size: 35px;
+    color: black;
+}
+
+.icono:hover:first-child{
+    color: black;
+    font-weight: bold;
+   
+    cursor:context-menu;
+}
+
+.icono a:hover{
+    color: blue;
+    cursor: pointer;
+    
+}
+/* Fin de contacto*/
+
+/* Footer*/
+footer{
+    background-color: gray;
+    clear:both;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+

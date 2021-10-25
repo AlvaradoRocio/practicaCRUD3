@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 168, 122);
+    padding: 1em 0;
+    margin:0;
+}
+.holder{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.holder img{
+    width: 100%;
+    border-radius:10% ;
+    object-fit: cover;
+    height: 200px;
+    float: right;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.acciones{
+    width: 10%;
+}
+
+input, textarea{
+    margin: 10px;
+}
+textarea{
+    resize: none;
+}
+
+
+footer{
+    background-color: gray;
+    clear:both;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+

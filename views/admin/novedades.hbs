@@ -1,0 +1,67 @@
+<div style="width:80%; margin-left:150px;">
+    <div class="container" style="padding: 50px 0 50px 0;">
+        <div class="row">
+            <p class="text-end">Hola {{usuario}} <a class="btn btn-danger" href="/admin/login/logout">Cerrar sesion
+                    <i class="fas fa-sign-out-alt"></i>
+                </a></p>
+
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <h3>Listado de novedades</h3>
+            </div>
+            <div class="col-3 text-center">
+                <a href="/admin/novedades/agregar" class="btn btn-success">
+                    <i class="fa fa-plus"></i>
+                    Nuevo
+                </a>
+            </div>
+            <div class="col-4">
+                <form action="/admin/novedades" class="d-flex" method="get">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" value="{{q}}" {{#if q}}value="{{q}}"{{/if}}>
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            {{#if is_search}}
+                {{#unless novedades.length}}
+                No se encontraron resultados para <strong>{{q}}</strong>
+                {{/unless}}
+            {{/if}}
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Subtitulo</th>
+                        <th scope="col">Parrafo</th>
+                        <th scope="col" class="text-end acciones">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td class="titulo">{{titulo}}</td>
+                        <td>{{subtitulo}}</td>
+                        <td>{{cuerpo}}</td>
+                        <td class="text-end">
+                            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary"><i class="far fa-edit"></i>
+                            </a>
+                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
